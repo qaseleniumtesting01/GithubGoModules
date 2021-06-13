@@ -16,4 +16,13 @@ steps:
 - task: WhiteSource@20
   inputs:
     cwd: '$(System.DefaultWorkingDirectory)'
-    projectName: 'GitHubGoModulesScanner'
+    configuration: |
+      log.level = debug
+      projectName = C3396537
+      productName = C3396537
+      includes = **/*.none
+      
+      resolveAllDependencies = false
+      
+      go.resolveDependencies = true
+      go.dependencyManager = modules
