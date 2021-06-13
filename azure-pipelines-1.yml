@@ -16,7 +16,6 @@ steps:
 - task: WhiteSource@20
   inputs:
     cwd: '$(System.DefaultWorkingDirectory)'
-    projectName: 'FunctionalityGoModules'
     configuration: |
       log.level = debug
       projectName = C3396537
